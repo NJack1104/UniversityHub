@@ -1,12 +1,38 @@
 <resources>
-    <string name="app_name">UniversityHub</string>
-    <string name="title_activity_main">MainActivity</string>
+    <string name="app_name">University Hub</string>
+    <string name="title_activity_main">Main Activity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_subtitle">android.studio@booty.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
     <string name="signout_account">Sign Out</string>
     <string name="delete_account">Delete Account</string>
+
+    <string name="groups">Groups</string>
+    <string name="messages">Messages</string>
+    <string name="office">Office</string>
+    <string name="workspace">Workspace</string>
+
+    <string name="c_message">Create New Message</string>
+    <string name="c_files">Create</string>
+    <string name="c_remin">Reminders</string>
+    <string name="c_event">Create Event</string>
+    <string name="c_group">Create Group</string>
+    <string name="j_class">Join Class</string>
+    <string name="j_group">Join Group</string>
+
+    <string name="add_reminder_button">Add Reminder</string>
+
+    <string-array name="create_array">
+        <item>Doc</item>
+        <item>Form</item>
+        <item>Sheet</item>
+        <item>Slides</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

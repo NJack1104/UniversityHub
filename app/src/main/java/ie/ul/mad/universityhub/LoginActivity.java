@@ -75,6 +75,7 @@ public class LoginActivity extends BaseActivity {
                         "uuid=" + mUser.getUid());
                 Intent intent = new Intent(this, MainActivity.class);
                 startActivity(intent);
+
             }
             else
             {
@@ -93,6 +94,5 @@ public class LoginActivity extends BaseActivity {
             }
         }
     }
-
 
 }
