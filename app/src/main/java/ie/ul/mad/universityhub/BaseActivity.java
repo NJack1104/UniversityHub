@@ -70,4 +70,6 @@ abstract class BaseActivity extends AppCompatActivity {
         Toast toast = Toast.makeText(this, message, Toast.LENGTH_SHORT);
         toast.show();
     }
+    //Testing 1,2,3
+
 }
