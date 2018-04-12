@@ -30,6 +30,15 @@ public class MessagesFragment extends Fragment {
             }
         });
 */
+        Button btn = (Button) view.findViewById(R.id.C_New_Mess);
+
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), MessageActivity.class));
+            }
+        });
+
         return view;
     }
 
