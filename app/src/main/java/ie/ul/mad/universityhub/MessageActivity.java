@@ -35,11 +35,12 @@ public class MessageActivity extends BaseActivity {
     private ArrayAdapter<String> arrayAdapter;
     private ArrayList<String> list_of_rooms = new ArrayList<>();
     private String name;
-    private DatabaseReference root = FirebaseDatabase.getInstance().getReference().getRoot();
+    private DatabaseReference root = FirebaseDatabase.getInstance().getReference().child("ChatRooms");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //setContentView(R.layout.activity_message);
         setContentView(R.layout.activity_message);
 
         add_room = (Button) findViewById(R.id.btn_add_room);

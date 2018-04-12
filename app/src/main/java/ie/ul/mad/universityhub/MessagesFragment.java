@@ -21,15 +21,7 @@ public class MessagesFragment extends Fragment {
         //change R.layout.yourlayoutfilename for each of your fragments
         View view = inflater.inflate(R.layout.fragment_messages, container, false);
 
-       /* Button Test = (Button) view.findViewById(R.id.Test);
-        Test.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                Intent in = new Intent(getActivity(), MessageActivity.class);
-                startActivity(in);
-            }
-        });
-*/
+
         Button btn = (Button) view.findViewById(R.id.C_New_Mess);
 
         btn.setOnClickListener(new View.OnClickListener() {

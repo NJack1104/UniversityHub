@@ -31,7 +31,7 @@ public class ReminderActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reminder);
         allTask = new ArrayList<Task>();
-        databaseReference = FirebaseDatabase.getInstance().getReference();
+        databaseReference = FirebaseDatabase.getInstance().getReference().child("Reminders");
         addTaskBox = (EditText)findViewById(R.id.add_task_box);
         recyclerView = (RecyclerView)findViewById(R.id.task_list);
         linearLayoutManager = new LinearLayoutManager(this);

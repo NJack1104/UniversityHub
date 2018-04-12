@@ -18,9 +18,6 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-/**
- * Created by filipp on 6/28/2016.
- */
 public class Chat_Room  extends BaseActivity{
 
     private Button btn_send_msg;
@@ -44,7 +41,7 @@ public class Chat_Room  extends BaseActivity{
         room_name = getIntent().getExtras().get("room_name").toString();
         setTitle(" Room - "+room_name);
 
-        root = FirebaseDatabase.getInstance().getReference().child(room_name);
+        root = FirebaseDatabase.getInstance().getReference().child("ChatRooms").child(room_name);
 
         btn_send_msg.setOnClickListener(new View.OnClickListener() {
             @Override
