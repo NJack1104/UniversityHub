@@ -30,7 +30,7 @@ public class OfficeFragment extends Fragment {
             }
         });
 
-       /* Button Test1 = (Button) view.findViewById(R.id.C_Event);
+        Button Test1 = (Button) view.findViewById(R.id.C_Event);
         Test1.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
@@ -38,7 +38,7 @@ public class OfficeFragment extends Fragment {
                 startActivity(in);
             }
         });
-*/
+
         return view;
     }
 

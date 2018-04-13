@@ -36,9 +36,9 @@ public class LoginActivity extends BaseActivity {
 
         if (mUser != null)
         {
-            showPopupMessage("already signed in, " +
-                    "displayName=" + mUser.getDisplayName() + ", " +
-                    "email=" + mUser.getEmail() + ", " +
+            showPopupMessage("Already signed in, \n" +
+                    "displayName=" + mUser.getDisplayName() + ", \n" +
+                    "email=" + mUser.getEmail() + ", \n" +
                     "uuid=" + mUser.getUid());
             Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
@@ -69,9 +69,9 @@ public class LoginActivity extends BaseActivity {
             if (resultCode == RESULT_OK)
             {
                 mUser = FirebaseAuth.getInstance().getCurrentUser();
-                showPopupMessage("sign in successful, " +
-                        "displayName=" + mUser.getDisplayName() + ", " +
-                        "email=" + mUser.getEmail() + ", " +
+                showPopupMessage("Sign in successful, " +
+                        "displayName=" + mUser.getDisplayName() + ", \n" +
+                        "email=" + mUser.getEmail() + ", \n" +
                         "uuid=" + mUser.getUid());
                 Intent intent = new Intent(this, MainActivity.class);
                 startActivity(intent);

@@ -26,8 +26,8 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ReminderActivity" />
         <activity android:name=".MessageActivity" />
-        <activity android:name=".Chat_Room">
-        </activity>
+        <activity android:name=".Chat_Room"></activity>
+        <activity android:name=".CalendarActivity"></activity>
     </application>
 
 </manifest>

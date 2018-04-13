@@ -15,10 +15,10 @@
     <string name="office">Office</string>
     <string name="workspace">Workspace</string>
 
-    <string name="c_message">Create New Message</string>
+    <string name="c_message">View Chat Rooms</string>
     <string name="c_files">Create</string>
     <string name="c_remin">Reminders</string>
-    <string name="c_event">Create Event</string>
+    <string name="c_event">View Events</string>
     <string name="c_group">Create Group</string>
     <string name="j_class">Join Class</string>
     <string name="j_group">Join Group</string>
@@ -31,8 +31,5 @@
         <item>Sheet</item>
         <item>Slides</item>
     </string-array>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
