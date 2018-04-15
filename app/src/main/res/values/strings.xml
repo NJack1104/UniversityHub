@@ -10,6 +10,10 @@
     <string name="signout_account">Sign Out</string>
     <string name="delete_account">Delete Account</string>
 
+    <string name="login">Login Activity</string>
+
+    <string name="room">Select your Chat Room or Create your own</string>
+
     <string name="groups">Groups</string>
     <string name="messages">Messages</string>
     <string name="office">Office</string>

@@ -37,6 +37,7 @@ public class MessageActivity extends BaseActivity {
     private String name;
     private DatabaseReference root = FirebaseDatabase.getInstance().getReference().child("ChatRooms");
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,7 +52,9 @@ public class MessageActivity extends BaseActivity {
 
         listView.setAdapter(arrayAdapter);
 
+
         request_user_name();
+
 
         add_room.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,6 +63,7 @@ public class MessageActivity extends BaseActivity {
                 Map<String,Object> map = new HashMap<String, Object>();
                 map.put(room_name.getText().toString(),"");
                 root.updateChildren(map);
+                room_name.getText().clear();
 
             }
         });

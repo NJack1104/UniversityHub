@@ -10,14 +10,16 @@
     tools:context="ie.ul.mad.universityhub.MessageActivity">
 
     <EditText
+        android:id="@+id/room_name_edittext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/room_name_edittext"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_toLeftOf="@+id/btn_add_room"
-        android:layout_toStartOf="@+id/btn_add_room" />
+        android:layout_toStartOf="@+id/btn_add_room"
+        android:hint="Enter a Room Name"
+        android:inputType="textCapWords|textCapSentences" />
 
     <Button
         android:layout_width="wrap_content"
@@ -29,11 +31,23 @@
         android:layout_alignParentEnd="true" />
 
     <ListView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/listView"
-        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="431dp"
+        android:layout_above="@+id/room_name_edittext"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_above="@+id/room_name_edittext" />
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="19dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="monospace"
+        android:text="@string/room"
+        android:textAlignment="center"
+        android:typeface="sans" />
 </RelativeLayout>

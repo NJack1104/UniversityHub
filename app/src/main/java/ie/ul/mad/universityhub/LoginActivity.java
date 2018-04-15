@@ -1,5 +1,6 @@
 package ie.ul.mad.universityhub;
 
+import android.app.Application;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -15,10 +16,13 @@ import com.google.firebase.auth.FirebaseUser;
 import java.util.Arrays;
 import java.util.List;
 
+
+
 public class LoginActivity extends BaseActivity {
 
     private static final String TAG = "LoginActivity" ;
     private static final int RC_SIGN_IN = 1007;
+    private String DISNAME;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -37,9 +41,9 @@ public class LoginActivity extends BaseActivity {
         if (mUser != null)
         {
             showPopupMessage("Already signed in, \n" +
-                    "displayName=" + mUser.getDisplayName() + ", \n" +
-                    "email=" + mUser.getEmail() + ", \n" +
-                    "uuid=" + mUser.getUid());
+                    "Display Name:" + mUser.getDisplayName() + ", \n" +
+                    "Email:" + mUser.getEmail() + ", \n" +
+                    "User Id: \n" + mUser.getUid());
             Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
         }
@@ -70,9 +74,9 @@ public class LoginActivity extends BaseActivity {
             {
                 mUser = FirebaseAuth.getInstance().getCurrentUser();
                 showPopupMessage("Sign in successful, " +
-                        "displayName=" + mUser.getDisplayName() + ", \n" +
-                        "email=" + mUser.getEmail() + ", \n" +
-                        "uuid=" + mUser.getUid());
+                        "Display Name:" + mUser.getDisplayName() + ", \n" +
+                        "Email:" + mUser.getEmail() + ", \n" +
+                        "User Id: \n" + mUser.getUid());
                 Intent intent = new Intent(this, MainActivity.class);
                 startActivity(intent);
 
@@ -81,12 +85,12 @@ public class LoginActivity extends BaseActivity {
             {
                 if (response == null)
                 {
-                    showPopupMessage("sign in cancelled");
+                    showPopupMessage("Sign in cancelled");
                     return;
                 }
                 if (response.getError().getErrorCode() == ErrorCodes.NO_NETWORK)
                 {
-                    showPopupMessage("no internet connection");
+                    showPopupMessage("No internet connection");
                     return;
                 }
                 // handle all other errors

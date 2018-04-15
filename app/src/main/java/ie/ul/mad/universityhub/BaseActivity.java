@@ -22,8 +22,6 @@ abstract class BaseActivity extends AppCompatActivity {
     protected TextView mEmail;
     protected TextView mUid;
 
-
-
     public void checkLogin()
     {
         mAuth = FirebaseAuth.getInstance();

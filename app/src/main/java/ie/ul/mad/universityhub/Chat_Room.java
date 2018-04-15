@@ -57,6 +57,7 @@ public class Chat_Room  extends BaseActivity{
                 map2.put("msg",input_msg.getText().toString());
 
                 message_root.updateChildren(map2);
+                input_msg.getText().clear();
             }
         });
 
@@ -103,7 +104,7 @@ public class Chat_Room  extends BaseActivity{
             chat_msg = (String) ((DataSnapshot)i.next()).getValue();
             chat_user_name = (String) ((DataSnapshot)i.next()).getValue();
 
-            chat_conversation.append(chat_user_name +" : "+chat_msg +" \n");
+            chat_conversation.append(chat_user_name +": "+chat_msg +" \n\n");
         }
 
 
