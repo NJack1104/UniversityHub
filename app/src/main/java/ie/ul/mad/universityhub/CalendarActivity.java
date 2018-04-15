@@ -101,6 +101,7 @@ public class CalendarActivity extends BaseActivity
         mOutputText.setPadding(16, 16, 16, 16);
         mOutputText.setVerticalScrollBarEnabled(true);
         mOutputText.setMovementMethod(new ScrollingMovementMethod());
+        mOutputText.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
         mOutputText.setText(
                 "Click the \'" + BUTTON_TEXT +"\' button to get your events.");
         activityLayout.addView(mOutputText);
@@ -391,6 +392,7 @@ public class CalendarActivity extends BaseActivity
             if (output == null || output.size() == 0) {
                 mOutputText.setText("No results returned.");
             } else {
+                mOutputText.setTextAlignment(View.TEXT_ALIGNMENT_VIEW_START);
                 output.add(0, "Format is YYYY-MM-DD T Start Time - hours to add for your Time Zone, doesn't account for Daylight savings");
                 mOutputText.setText(TextUtils.join("\n\n", output));
             }

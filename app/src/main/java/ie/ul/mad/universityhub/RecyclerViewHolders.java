@@ -33,7 +33,7 @@ public class RecyclerViewHolders extends RecyclerView.ViewHolder{
                 Toast.makeText(v.getContext(), "Reminder Deleted", Toast.LENGTH_LONG).show();
                 String taskTitle = taskObject.get(getAdapterPosition()).getTask();
                 Log.d(TAG, "Task Title " + taskTitle);
-                DatabaseReference ref = FirebaseDatabase.getInstance().getReference();
+                DatabaseReference ref = FirebaseDatabase.getInstance().getReference().child("Reminders");
                 Query applesQuery = ref.orderByChild("task").equalTo(taskTitle);
                 applesQuery.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override

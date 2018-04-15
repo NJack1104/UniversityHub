@@ -14,7 +14,7 @@
             android:id="@+id/C_New_Mess"
             android:layout_width="230dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="76dp"
+            android:layout_marginTop="100dp"
             android:text="@string/c_message"
             android:textSize="24sp"
             android:textStyle="bold"
