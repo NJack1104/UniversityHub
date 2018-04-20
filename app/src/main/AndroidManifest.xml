@@ -24,14 +24,18 @@
             android:name=".MainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ReminderActivity"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".MessageActivity"
+        <activity
+            android:name=".ReminderActivity"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".Chat_Room"
+        <activity
+            android:name=".MessageActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Chat_Room"
             android:parentActivityName=".MessageActivity" />
-        <activity android:name=".CalendarActivity"
-            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".CalendarActivity"
+            android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>

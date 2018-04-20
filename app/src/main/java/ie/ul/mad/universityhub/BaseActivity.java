@@ -17,10 +17,7 @@ import com.google.firebase.auth.FirebaseUser;
 abstract class BaseActivity extends AppCompatActivity {
     protected FirebaseAuth mAuth;
     protected FirebaseUser mUser;
-    private static final String TAG = "UniversityHub";
-    protected TextView mDisplayName;
-    protected TextView mEmail;
-    protected TextView mUid;
+    protected static final String TAG = "UniversityHub";
 
     public void checkLogin()
     {
@@ -45,7 +42,6 @@ abstract class BaseActivity extends AppCompatActivity {
                     }
                 });
         checkLogin();
-        //may need to updateUI
     }
 
     public void deleteUserAccount()
@@ -58,7 +54,6 @@ abstract class BaseActivity extends AppCompatActivity {
                     }
                 });
         signOutUserAccount();
-        //may need to updateUI
     }
 
     protected void showPopupMessage(String message)
@@ -68,6 +63,5 @@ abstract class BaseActivity extends AppCompatActivity {
         Toast toast = Toast.makeText(this, message, Toast.LENGTH_SHORT);
         toast.show();
     }
-    //Testing 1,2,3
 
 }

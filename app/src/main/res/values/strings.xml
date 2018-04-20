@@ -35,5 +35,6 @@
         <item>Sheet</item>
         <item>Slides</item>
     </string-array>
+    <string name="gmail">GMail</string>
 
 </resources>

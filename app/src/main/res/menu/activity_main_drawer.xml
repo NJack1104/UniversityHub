@@ -16,6 +16,10 @@
             android:id="@+id/nav_office"
             android:icon="@drawable/ic_office"
             android:title="@string/office" />
+        <item
+            android:id="@+id/nav_gmail"
+            android:icon="@drawable/ic_email_black_24dp"
+            android:title="@string/gmail" />
     </group>
 
 

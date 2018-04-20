@@ -41,7 +41,6 @@ public class MainActivity extends BaseActivity
 
         displaySelectedScreen(R.id.nav_groups);
 
-
     }
 
     @Override
@@ -100,6 +99,9 @@ public class MainActivity extends BaseActivity
                 break;
             case R.id.nav_office:
                 fragment = new OfficeFragment();
+                break;
+            case R.id.nav_gmail:
+                fragment = new GMailFragment();
                 break;
         }
 
